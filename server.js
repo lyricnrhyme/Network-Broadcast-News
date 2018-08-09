@@ -7,7 +7,7 @@ const server = net.createServer((client) => {
     client.on("data", data => {
 
         const msg = data.toString();
-        if (msg.includes("/shia")) {
+        if (msg.includes("shia")) {
             client.write("https://www.youtube.com/watch?v=PSZy6lGgOcI")
         } 
         if (msg.includes("/just do it")) {
@@ -32,5 +32,5 @@ const server = net.createServer((client) => {
 });
 
 server.listen(6969, () => { 
-    console.log("Server listening on port 6968");
+    console.log("Server listening on port 6969");
 });
